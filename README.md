@@ -2,7 +2,7 @@
 
 > Project for NKO &#34;РАКЛЕЧИТСЯ&#34;
 
-[https://www.figma.com/file/BhM4jsOVCIx6cpCm6wQBQQ/РакЛечится-(Copy)?node-id=165%3A62](Макет)
+(https://www.figma.com/file/BhM4jsOVCIx6cpCm6wQBQQ/РакЛечится-(Copy)?node-id=165%3A62)[Макет]
 
 В терменале перейдите в папку где будут храниться проекты(не нужно создавать папку под этот проект, она создасдится автоматически) и введите команду:
 ### git clone https://github.com/AOseledec/cancer-shall-not-pass.git
