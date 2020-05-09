@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1 class="black">dddddffdfsdfs</h1>
     <Storie></Storie>
   </div>
 </template>
@@ -14,9 +13,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.black {
-  display: flex;
-  color: black;
-}
-</style>
+<style scoped></style>
