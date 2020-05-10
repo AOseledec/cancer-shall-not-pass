@@ -125,24 +125,28 @@ export default {};
 .graf__top-line {
   width: 160px;
   height: 20px;
+  margin-left: 20px;
   background-color: #f4f4f4;
 }
 
 .graf__bottom-line {
   width: 208px;
   height: 20px;
+  margin-left: 20px;
   background-color: #613a93;
 }
 
 .graf__top-line-2 {
   width: 190px;
   height: 20px;
+  margin-left: 20px;
   background-color: #f4f4f4;
 }
 
 .graf__bottom-line-2 {
   width: 142px;
   height: 20px;
+  margin-left: 20px;
   background-color: #613a93;
 }
 
