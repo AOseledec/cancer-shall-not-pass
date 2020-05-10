@@ -1,9 +1,16 @@
 <template>
-  <div></div>
+  <div>
+    <Storie></Storie>
+  </div>
 </template>
 
 <script>
-export default {};
+import Storie from '@/components/Storie';
+export default {
+  components: {
+    Storie: Storie,
+  },
+};
 </script>
 
 <style scoped></style>
