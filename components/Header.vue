@@ -19,6 +19,7 @@ export default {};
 
 <style scoped>
 .header {
+  margin: 0 auto;
   max-width: 1440px;
   display: flex;
   justify-content: space-between;
