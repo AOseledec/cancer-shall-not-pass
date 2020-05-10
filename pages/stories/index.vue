@@ -6,6 +6,7 @@
 
 <script>
 import Storie from '@/components/Storie';
+
 export default {
   components: {
     Storie: Storie,
