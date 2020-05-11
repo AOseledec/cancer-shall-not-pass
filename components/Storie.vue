@@ -27,14 +27,14 @@
         <StoriesCard></StoriesCard>
       </div>
       <div class="storie__next-buttons">
-        <ButtonNumberPage>3</ButtonNumberPage>
-        <ButtonNumberPage>1</ButtonNumberPage>
-        <ButtonNumberPage>1</ButtonNumberPage>
-        <ButtonNumberPage>1</ButtonNumberPage>
-        <ButtonNumberPage>1</ButtonNumberPage>
-        <ButtonNumberPage>1</ButtonNumberPage>
-        <ButtonNumberPage>1</ButtonNumberPage>
-        <ButtonNumberPage>1</ButtonNumberPage>
+        <ButtonNumberPage></ButtonNumberPage>
+        <ButtonNumberPage></ButtonNumberPage>
+        <ButtonNumberPage></ButtonNumberPage>
+        <ButtonNumberPage></ButtonNumberPage>
+        <ButtonNumberPage></ButtonNumberPage>
+        <ButtonNumberPage></ButtonNumberPage>
+        <ButtonNumberPage></ButtonNumberPage>
+        <ButtonNumberPage></ButtonNumberPage>
       </div>
     </section>
   </div>
@@ -61,8 +61,10 @@ export default {
 
 .storie__cards {
   display: flex;
+  max-width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  border: 1px solid red;
 }
 
 .storie__tell-a-story {
@@ -99,27 +101,32 @@ export default {
 
 .storie__title {
   margin: 100px 60px 60px 60px;
-  width: 413px;
+  max-width: 413px;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 2em;
 }
 
 .storie__form {
-  flex-direction: row;
+  display: flex;
+  max-width: 100%;
+  height: 52px;
+  margin-right: 60px;
+  margin-left: 60px;
 }
 
 .storie_input {
-  margin-left: 60px;
-  margin-right: 10px;
-  width: 1074px;
-  height: 52px;
+  width: 100%;
+  max-height: 100%;
+  margin-left: 0;
+  margin-right: auto;
   border: 1px solid #e8e8e8;
 }
 
 .storie__button {
   width: 226px;
-  height: 52px;
+  max-height: 100%;
+  margin-right: 0;
+  margin-left: 20px;
   font-size: 16px;
   line-height: 20px;
   color: white;
@@ -128,8 +135,37 @@ export default {
 }
 
 .storie__next-buttons {
-  display: flex;
-  flex-direction: row;
-  padding: 120px 100px;
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1280px) {
+  .storie__title {
+    margin: 90px 50px 50px 50px;
+  }
+  .storie__form {
+    height: 48px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .storie__next-buttons {
+    margin-top: 130px;
+    margin-bottom: 90px;
+  }
+  .storie__next-buttons {
+    margin-top: 130px;
+    margin-bottom: 90px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .storie__title {
+    max-width: 280px;
+    font-size: 1.5em;
+  }
+  .storie__form {
+    height: 46px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }
 </style>
