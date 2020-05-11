@@ -1,7 +1,7 @@
 <template>
   <section class="wrapped special">
     <div class="special__head">
-      <img class="special__image" src="" alt="" />
+      <img class="special__image" src="https://picsum.photos/195" alt="" />
       <div class="special__info">
         <h2 class="special__info-title">
           <span class="special__span">Александр Тарханов:</span>
@@ -65,49 +65,22 @@
     </div>
 
     <div class="special-stories">
-      <div class="special-storie__container">
-        <div class="special-storie">
-          <img class="special-storie__image" src="" alt="" />
-          <h3 class="special-storie__author">Владимир Тен</h3>
-          <p class="special-storie__quote">
-            Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-          </p>
-        </div>
-      </div>
-      <div class="special-storie__container">
-        <div class="special-storie">
-          <img class="special-storie__image" src="" alt="" />
-          <h3 class="special-storie__author">Владимир Тен</h3>
-          <p class="special-storie__quote">
-            Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-          </p>
-        </div>
-      </div>
-      <div class="special-storie__container">
-        <div class="special-storie">
-          <img class="special-storie__image" src="" alt="" />
-          <h3 class="special-storie__author">Владимир Тен</h3>
-          <p class="special-storie__quote">
-            Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-          </p>
-        </div>
-      </div>
-      <div class="special-storie__container">
-        <div class="special-storie">
-          <img class="special-storie__image" src="" alt="" />
-          <h3 class="special-storie__author">Владимир Тен</h3>
-          <p class="special-storie__quote">
-            Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-          </p>
-        </div>
-      </div>
+      <StoriesCard></StoriesCard>
+      <StoriesCard></StoriesCard>
+      <StoriesCard></StoriesCard>
+      <StoriesCard></StoriesCard>
     </div>
     <button class="special-storie__more">Больше статей</button>
   </section>
 </template>
 
 <script>
-export default {};
+import StoriesCard from '@/components/StoriesCard';
+export default {
+  components: {
+    StoriesCard,
+  },
+};
 </script>
 
 <style scoped>
@@ -248,5 +221,40 @@ export default {};
   color: black;
   background: #fbfbfb;
   border: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .special {
+    margin: 100px 50px 0;
+  }
+
+  .special__image {
+    max-width: 518px;
+    max-height: 518px;
+  }
+
+  .special__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 602px;
+    border-style: solid none;
+    border-color: #efefef;
+    border-width: 1px;
+  }
+
+  .special__info-title {
+    font-size: 34px;
+  }
+
+  .special__storie {
+    width: 720px;
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+
+  .special-stories {
+    flex-wrap: nowrap;
+  }
 }
 </style>
