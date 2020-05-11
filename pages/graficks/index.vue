@@ -5,11 +5,11 @@
 </template>
 
 <script>
-import Graficks from '@/components/Graficks';
+import Graficks from '@/components/Graficks.vue';
 
 export default {
   components: {
-    Graficks: Graficks,
+    Graficks,
   },
 };
 </script>
