@@ -39,6 +39,10 @@
       </h2>
     </section>
 
+    <section>
+      <Storie />
+    </section>
+
     <section class="block-purple">
       <h2 class="block-purple__text">
         РАССКАЗЫВАЙТЕ ВАШИ ИСТОРИИ В ИНСТАГРАМ
@@ -90,6 +94,10 @@
       </div>
     </section>
 
+    <section>
+      <Graficks />
+    </section>
+
     <section class="project">
       <h3 class="project__title">#РАКЛЕЧИТСЯ</h3>
       <p class="story__tell-title story__tell-title_project">О проекте</p>
@@ -120,7 +128,17 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import Graficks from '@/components/Graficks.vue';
+import Storie from '@/components/Storie.vue';
+
+export default {
+  components: {
+    Graficks,
+    Storie,
+  },
+};
+</script>
 
 <style>
 .page {
