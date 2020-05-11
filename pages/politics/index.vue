@@ -1,9 +1,9 @@
 <template>
   <div class="politics">
-    <h1 class="title title__politics">
+    <h1 class="title title__politics title__h1">
       Политика проекта в отношении обработки персональных данных.
     </h1>
-    <h2 class="politics__general">1. Общие положения.</h2>
+    <h2 class="title title__h2 politics__general">1. Общие положения.</h2>
     <p class="politics__general politics__general_text">
       Настоящая политика обработки персональных данных составлена в соответствии
       с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных
@@ -24,7 +24,7 @@
         может получить о посетителях веб-сайта http://raklechitsa.ru.
       </li>
     </ol>
-    <h2 class="politics__terms">
+    <h2 class="title title__h2 politics__terms">
       2. Основные понятия, используемые в Политике
     </h2>
     <ol>
@@ -105,7 +105,7 @@
         уничтожаются материальные носители персональных данных.
       </li>
     </ol>
-    <h2 class="politics__rights">
+    <h2 class="title title__h2 politics__rights">
       3. Оператор может обрабатывать следующие персональные данные Пользователя
     </h2>
     <ol>
@@ -130,7 +130,9 @@
         понятием Персональные данные.
       </li>
     </ol>
-    <h2 class="politics__target">4. Цели обработки персональных данных</h2>
+    <h2 class="title title__h2 politics__target">
+      4. Цели обработки персональных данных
+    </h2>
     <ol>
       <li class="politics__target politics__target_punkt">
         Цель обработки персональных данных Пользователя — использование
@@ -150,7 +152,7 @@
         Пользователей на сайте, улучшения качества сайта и его содержания.
       </li>
     </ol>
-    <h2 class="politics__footing">
+    <h2 class="title title__h2 politics__footing">
       5. Правовые основания обработки персональных данных
     </h2>
     <ol>
@@ -167,7 +169,7 @@
         файлов «cookie» и использование технологии JavaScript).
       </li>
     </ol>
-    <h2 class="politics__order">
+    <h2 class="title title__h2 politics__order">
       6. Порядок сбора, хранения, передачи и других видов обработки персональных
       данных
     </h2>
@@ -202,7 +204,7 @@
         согласия на обработку персональных данных».
       </li>
     </ol>
-    <h2 class="politics__data">
+    <h2 class="title title__h2 politics__data">
       7. Трансграничная передача персональных данных
     </h2>
     <ol>
@@ -222,7 +224,9 @@
         персональных данных.
       </li>
     </ol>
-    <h2 class="politics__conclusion">8. Заключительные положения</h2>
+    <h2 class="title title__h2 politics__conclusion">
+      8. Заключительные положения
+    </h2>
     <ol>
       <li class="politics__conclusion politics__conclusion_punkt">
         Пользователь может получить любые разъяснения по интересующим вопросам,
