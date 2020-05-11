@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="stories">
+    <section class="wrapped">
       <form class="storie__find">
         <h3 class="storie__title">Истории неизлечимых привычек</h3>
         <div class="storie__form">
@@ -9,176 +9,51 @@
         </div>
       </form>
       <div class="storie__cards">
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Познер</h3>
-            <p class="storie__quote">
-              Я боюсь акул — и, в отличии от рака, это не лечится.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Александр Тарханов</h3>
-            <p class="storie__quote">
-              Я не могу победить свою пунктуальность в отличии от рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Познер</h3>
-            <p class="storie__quote">
-              Я боюсь акул — и, в отличии от рака, это не лечится.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Александр Тарханов</h3>
-            <p class="storie__quote">
-              Я не могу победить свою пунктуальность в отличии от рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Познер</h3>
-            <p class="storie__quote">
-              Я боюсь акул — и, в отличии от рака, это не лечится.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Александр Тарханов</h3>
-            <p class="storie__quote">
-              Я не могу победить свою пунктуальность в отличии от рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Познер</h3>
-            <p class="storie__quote">
-              Я боюсь акул — и, в отличии от рака, это не лечится.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Александр Тарханов</h3>
-            <p class="storie__quote">
-              Я не могу победить свою пунктуальность в отличии от рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Познер</h3>
-            <p class="storie__quote">
-              Я боюсь акул — и, в отличии от рака, это не лечится.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Александр Тарханов</h3>
-            <p class="storie__quote">
-              Я не могу победить свою пунктуальность в отличии от рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
+        <StoriesCard></StoriesCard>
       </div>
       <div class="storie__next-buttons">
-        <button class="storie__next-button">1</button>
-        <button class="storie__next-button">2</button>
-        <button class="storie__next-button">3</button>
-        <button class="storie__next-button">4</button>
-        <button class="storie__next-button">5</button>
-        <button class="storie__next-button">6</button>
-        <button class="storie__next-button">7</button>
+        <ButtonNumberPage>3</ButtonNumberPage>
+        <ButtonNumberPage>1</ButtonNumberPage>
+        <ButtonNumberPage>1</ButtonNumberPage>
+        <ButtonNumberPage>1</ButtonNumberPage>
+        <ButtonNumberPage>1</ButtonNumberPage>
+        <ButtonNumberPage>1</ButtonNumberPage>
+        <ButtonNumberPage>1</ButtonNumberPage>
+        <ButtonNumberPage>1</ButtonNumberPage>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-export default {};
+import StoriesCard from '@/components/StoriesCard';
+import ButtonNumberPage from '@/components/ButtonNumberPage';
+
+export default {
+  components: {
+    StoriesCard,
+    ButtonNumberPage,
+  },
+};
 </script>
 
 <style scoped>
-.stories {
+.wrapped {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -188,52 +63,6 @@ export default {};
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.storie__container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 300px;
-  margin: 20px;
-  background: white;
-}
-
-.storie__image {
-  width: 300px;
-  height: 300px;
-
-  background: #ededed;
-}
-
-.storie__author {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 22px;
-  margin-top: 20px;
-  margin-bottom: 0;
-  color: #000000;
-}
-
-.storie__quote {
-  max-width: 220px;
-  margin-top: 14px;
-  font-size: 14px;
-  line-height: 18px;
-  color: #666666;
-}
-
-.storie {
-  display: flex;
-  flex-direction: column;
-  width: 382px;
-}
-
-@media screen and (max-width: 1024px) {
-  .storie {
-    width: 90%;
-    max-width: calc((100% - 57px) / 3);
-  }
 }
 
 .storie__tell-a-story {
@@ -302,14 +131,5 @@ export default {};
   display: flex;
   flex-direction: row;
   padding: 120px 100px;
-}
-
-.storie__next-button {
-  width: 58px;
-  height: 58px;
-  margin: 5px;
-  background: #f4f4f4;
-  border: none;
-  font-size: 18px;
 }
 </style>

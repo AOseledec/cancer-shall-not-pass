@@ -1,5 +1,5 @@
 <template>
-  <section class="special">
+  <section class="wrapped special">
     <div class="special__head">
       <img class="special__image" src="" alt="" />
       <div class="special__info">
@@ -111,9 +111,11 @@ export default {};
 </script>
 
 <style scoped>
-.special {
+.wrapped {
   display: flex;
   flex-wrap: wrap;
+}
+.special {
   justify-content: center;
   margin: 100px 60px 0;
 }
