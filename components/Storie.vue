@@ -5,7 +5,26 @@
         <h2 class="storie__title">Истории неизлечимых привычек</h2>
         <div class="storie__form">
           <input class="storie_input" type="search" />
-          <button class="storie__button">Поиск</button>
+          <button class="storie__button">
+            <svg
+              class="storie__button-svg"
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="5.91304" cy="5.91304" r="5.41304" stroke="white" />
+              <line
+                x1="10.0918"
+                y1="10.0813"
+                x2="16.3527"
+                y2="16.3421"
+                stroke="white"
+              />
+            </svg>
+            Поиск
+          </button>
         </div>
       </form>
       <div class="storie__cards">
@@ -31,9 +50,9 @@
         <ButtonNumberPage v-text="2"></ButtonNumberPage>
         <ButtonNumberPage v-text="3"></ButtonNumberPage>
         <ButtonNumberPage v-text="4"></ButtonNumberPage>
-        <ButtonNumberPage v-text="5"></ButtonNumberPage>
-        <ButtonNumberPage v-text="6"></ButtonNumberPage>
-        <ButtonNumberPage v-text="7"></ButtonNumberPage>
+        <ButtonNumberPage id="mobileRemove" v-text="5"></ButtonNumberPage>
+        <ButtonNumberPage id="mobileRemove" v-text="6"></ButtonNumberPage>
+        <ButtonNumberPage id="mobileRemove" v-text="7"></ButtonNumberPage>
       </div>
     </section>
   </div>
@@ -63,30 +82,6 @@ export default {
   max-width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.storie__tell-a-story {
-  width: 1320px;
-  height: 129px;
-  display: flex;
-  justify-content: center;
-  background: #613a93;
-}
-
-.storie__text {
-  justify-content: center;
-  max-width: 750px;
-  min-width: 750px;
-  text-align: center;
-  vertical-align: auto;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 46px;
-  color: white;
-}
-
-.storie__text-span {
-  font-weight: bold;
 }
 
 .storie__find {
@@ -132,6 +127,10 @@ export default {
   outline: none;
 }
 
+.storie__button-svg {
+  display: none;
+}
+
 .storie__next-buttons {
   margin-top: 140px;
   margin-bottom: 100px;
@@ -141,11 +140,13 @@ export default {
   .storie__title {
     margin: 90px 50px 50px 50px;
   }
+
   .storie__form {
     height: 48px;
     margin-right: 50px;
     margin-left: 50px;
   }
+
   .storie__next-buttons {
     margin-top: 130px;
     margin-bottom: 90px;
@@ -160,10 +161,103 @@ export default {
     max-width: 280px;
     font-size: 1.5em;
   }
+
   .storie__form {
     height: 46px;
     margin-right: 50px;
     margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .storie__title {
+    margin: 80px auto 50px auto;
+    max-width: 380px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .storie__form {
+    height: 46px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .storie__find {
+    margin-bottom: 20px;
+  }
+
+  .storie_input {
+    max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 454px) {
+  .storie__button {
+    width: 46px;
+    margin-left: 6px;
+    font-size: 0;
+  }
+
+  .storie__button-svg {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  #mobileRemove {
+    display: none;
+  }
+
+  .storie__next-buttons {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .storie__title {
+    margin: 80px auto 50px auto;
+    max-width: 290px;
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .storie__form {
+    height: 46px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .storie__find {
+    margin-bottom: 20px;
+  }
+
+  .storie_input {
+    max-width: 460px;
+  }
+
+  .storie__button {
+    width: 46px;
+    margin-left: 6px;
+    font-size: 0;
+  }
+
+  .storie_input {
+    max-width: 238px;
+  }
+
+  .storie__button-svg {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  #mobileRemove {
+    display: none;
+  }
+
+  .storie__next-buttons {
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 }
 </style>

@@ -85,12 +85,13 @@ export default {};
 }
 
 .footer__copyright-text {
-  margin-right: 800px;
+  /*margin-right: 800px;*/
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 18px;
   color: #898989;
+  border: 1px solid red;
 }
 .footer__copyright-text:nth-last-child(1) {
   margin: 0;

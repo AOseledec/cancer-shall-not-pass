@@ -28,7 +28,6 @@ a {
 
 .storie__image {
   min-width: 100%;
-
   background: #ededed;
 }
 
@@ -82,6 +81,36 @@ a {
 @media screen and (max-width: 1024px) {
   .storie__container {
     max-width: 208px;
+  }
+
+  .titel_h3 {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .storie__container {
+    max-width: 216px;
+    margin: 40px 10px 0 10px;
+  }
+
+  .titel_h3 {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .storie__container {
+    max-width: 290px;
+    margin: 0 10px 30px 10px;
   }
 
   .titel_h3 {
