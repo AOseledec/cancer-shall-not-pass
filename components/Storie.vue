@@ -2,7 +2,7 @@
   <div>
     <section class="wrapped">
       <form class="storie__find">
-        <h3 class="storie__title">Истории неизлечимых привычек</h3>
+        <h2 class="storie__title">Истории неизлечимых привычек</h2>
         <div class="storie__form">
           <input class="storie_input" type="search" />
           <button class="storie__button">Поиск</button>
@@ -27,14 +27,13 @@
         <StoriesCard></StoriesCard>
       </div>
       <div class="storie__next-buttons">
-        <ButtonNumberPage></ButtonNumberPage>
-        <ButtonNumberPage></ButtonNumberPage>
-        <ButtonNumberPage></ButtonNumberPage>
-        <ButtonNumberPage></ButtonNumberPage>
-        <ButtonNumberPage></ButtonNumberPage>
-        <ButtonNumberPage></ButtonNumberPage>
-        <ButtonNumberPage></ButtonNumberPage>
-        <ButtonNumberPage></ButtonNumberPage>
+        <ButtonNumberPage v-text="1"></ButtonNumberPage>
+        <ButtonNumberPage v-text="2"></ButtonNumberPage>
+        <ButtonNumberPage v-text="3"></ButtonNumberPage>
+        <ButtonNumberPage v-text="4"></ButtonNumberPage>
+        <ButtonNumberPage v-text="5"></ButtonNumberPage>
+        <ButtonNumberPage v-text="6"></ButtonNumberPage>
+        <ButtonNumberPage v-text="7"></ButtonNumberPage>
       </div>
     </section>
   </div>
@@ -64,7 +63,6 @@ export default {
   max-width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .storie__tell-a-story {
@@ -103,7 +101,7 @@ export default {
   margin: 100px 60px 60px 60px;
   max-width: 413px;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 32px;
 }
 
 .storie__form {

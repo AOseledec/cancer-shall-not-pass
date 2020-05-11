@@ -1,10 +1,10 @@
 <template>
   <div class="storie__container">
     <img class="storie__image" src="https://picsum.photos/195" alt="" />
-    <h3 class="storie__author">Владимир Познер</h3>
-    <p class="storie__quote">
+    <h3 class="titel_h3">Владимир Познер</h3>
+    <a href="_id" class="description">
       Я боюсь акул — и, в отличии от рака, это не лечится.
-    </p>
+    </a>
   </div>
 </template>
 
@@ -13,6 +13,9 @@ export default {};
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
 .storie__container {
   display: flex;
   justify-content: space-between;
@@ -29,20 +32,18 @@ export default {};
   background: #ededed;
 }
 
-.storie__author {
+.titel_h3 {
   font-weight: 600;
-  font-size: 1.4em;
-  line-height: 1.4em;
+  font-size: 22px;
   margin-top: 20px;
   margin-bottom: 0;
   color: #000000;
 }
 
-.storie__quote {
+.description {
   max-width: 220px;
   margin-top: 14px;
-  font-size: 0.875em;
-  line-height: 1.125em;
+  font-size: 14px;
   color: #666666;
 }
 
@@ -83,12 +84,12 @@ export default {};
     max-width: 208px;
   }
 
-  .storie__author {
-    font-size: 1.125em;
+  .titel_h3 {
+    font-size: 18px;
   }
 
-  .storie__quote {
-    font-size: 0.8em;
+  .description {
+    font-size: 13px;
   }
 }
 </style>
