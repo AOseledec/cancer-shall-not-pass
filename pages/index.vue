@@ -50,10 +50,24 @@
             <div class="story__main">
                 <p class="story__tell-text">Мы публикуем новые истории на сайте раз в неделю. Есть 2 варианта поделиться своей историей неизлечимых привычек, навязчивых идей и болезненных привязанностей.</p>
                 <ul class="story__text-choices">
-                    <li class="story__text-choice">1-й вариант</li>
+                    <li class="story__text-choice story__text-choice_black">1-й вариант</li>
                     <li class="story__text-choice">2-й вариант</li>
                 </ul>
                 <p class="story__text-forma">Заполнить подробную форму прямо на сайте и мы опубликуем вашу историю после проверки. Пожалуйста, заполняйте все пункты корректно, если вы испытаете какие-то сложности, воспользуйтесь 2-м вариантом.</p>
+            </div>
+        </section>
+
+        <section class="project">
+            <h3 class="project__title">#РАКЛЕЧИТСЯ</h3>
+            <p class="story__tell-title story__tell-title_project">О проекте</p>
+            <div class="story__main ">
+                <p class="story__tell-text story__tell-text_project">Этот проект был создан благотворительным фондом Константина Хабенского.</p>
+                <ul class="story__text-choices story__text-choices_project">
+                    <li class="story__text-choice story__text-choice_white">Рак Лечится</li>
+                    <li class="story__text-choice">Фонд Хабенского</li>
+                </ul>
+                <p class="story__text-forma story__text-forma_project">Есть вещи, которые не лечатся. Особенности характера, страстные увлечения, привычки, ставшие частью нашего «я», фобии, которые мы приобрели в детстве. Список можно продолжать до бесконечности, но одна болезнь в него точно не войдет. Эта болезнь — рак. Рак лечится, и лучшее доказательство — люди с их неизлечимыми особенностями, которые сумели победить рак.
+Рак лечится — проект Благотворительного Фонда Константина Хабенского и Leo Burnett Moscow. С его помощью мы надеемся изменить отношение людей к раку и заставить каждого поверить: онкологическое заболевание — это не приговор.</p>
             </div>
         </section>
   </div>
@@ -65,36 +79,6 @@
 .page{
  max-width: 1440px;
  margin: 0;
-}
-
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1320px;
-    margin: 0 auto;
-}
-
-.header__title{
-    max-width: 340px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    margin: 18px 0;
-}
-
-.header__nav{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    margin-right: 40px;
-}
-
-.header__nav:last-child{
-    margin-right: 0;
 }
 
 .promo{
@@ -234,40 +218,35 @@
     width: 100%;
     background-color:  #F7F7F7;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     margin: 100px auto 0;
 }
 
-.story__tell{
-    max-width: 340px;
 
-}
-
-.story__text{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 787px;
-}
 
 .story__text-choices{
-
-    margin-right: 40px;
     list-style-type: none;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+    padding: 0;
+    margin-right: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #666;
 }
 
 .story__text-choice{
-    max-width: 110px;
+    max-width: 155px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+}
+
+.story__text-choice_black{
+    color: black;
 }
 
 .story__text-forma{
@@ -275,6 +254,10 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
+    max-width: 640px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #666;
 }
 
 .story__tell-title{
@@ -282,6 +265,9 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 36px;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-bottom: 0;
     }
 
 .story__tell-text{
@@ -290,9 +276,53 @@
     font-size: 18px;
     line-height: 22px;
     color: #666;
+    max-width: 340px;
+    margin-right: 195px;
+    margin-bottom: 208px;/*временно*/
+    margin-top: 0;
 }
 
 .story__main{
+    vertical-align: text-top;
+    display: flex;
+    flex-direction: row;
+    max-width: 1320px;
+    margin: 32px auto 0;
+}
 
+.project{
+    background-color: #613A93;
+    width: 100%;
+    color: #fff;
+}
+
+.project__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    margin: 0 auto 70px;
+    padding-top: 90px;
+}
+
+.story__tell-text_project{
+    color: #DEDEDE;
+}
+
+.story__text-choices_project{
+    color: #DEDEDE;
+}
+
+.story__text-forma_project{
+    color: #DEDEDE;
+}
+
+.story__text-choice_white{
+    color: #fff;
+}
+
+.story__tell-title_project{
+    margin-top: 0;
 }
 </style>
