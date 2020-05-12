@@ -1,20 +1,7 @@
 <template>
   <div class="popup">
-    <div class="popup__content">
-      <img src="" alt="" class="popup__close" />
-      <h3 class="popup__title">{{ title }}</h3>
-      <p class="popup__subtitile">{{ subtitle }}</p>
-      <form class="popup__form" name="new">
-        <input
-          type="text"
-          name="name"
-          class="popup__input"
-          placeholder="Напишите тут"
-        />
-        <button type class="popup__button popup__button_back">Назад</button>
-        <button type class="popup__button popup__button_next">Далее</button>
-      </form>
-    </div>
+    <img src="/cross.svg" alt="" />
+    <slot></slot>
   </div>
 </template>
 
