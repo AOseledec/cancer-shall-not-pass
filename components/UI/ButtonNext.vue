@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button type class="popup__button popup__button_back">Назад</button>
+    <button type class="popup__button popup__button_next">Далее</button>
   </div>
 </template>
 
@@ -8,4 +8,13 @@
 export default {};
 </script>
 
-<style scoped></style>
+<style scoped>
+.popup__button_next {
+  background-color: #613a93;
+  width: 226px;
+  height: 52px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+}
+</style>
