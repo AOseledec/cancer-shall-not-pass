@@ -28,31 +28,31 @@
         </div>
       </form>
       <div class="storie__cards">
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
-        <StoriesCard></StoriesCard>
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
       </div>
       <div class="storie__next-buttons">
         <ButtonNumberPage v-text="1"></ButtonNumberPage>
         <ButtonNumberPage v-text="2"></ButtonNumberPage>
         <ButtonNumberPage v-text="3"></ButtonNumberPage>
         <ButtonNumberPage v-text="4"></ButtonNumberPage>
-        <ButtonNumberPage id="mobileRemove" v-text="5"></ButtonNumberPage>
-        <ButtonNumberPage id="mobileRemove" v-text="6"></ButtonNumberPage>
-        <ButtonNumberPage id="mobileRemove" v-text="7"></ButtonNumberPage>
+        <ButtonNumberPage v-text="5"></ButtonNumberPage>
+        <ButtonNumberPage v-text="6"></ButtonNumberPage>
+        <ButtonNumberPage v-text="7"></ButtonNumberPage>
       </div>
     </section>
   </div>
@@ -204,11 +204,11 @@ export default {
     margin-top: 10px;
   }
 
-  #mobileRemove {
-    display: none;
-  }
-
   .storie__next-buttons {
+    width: 260px;
+    height: 70px;
+    overflow: hidden;
+    flex-wrap: nowrap;
     margin-top: 20px;
     margin-bottom: 50px;
   }
@@ -249,10 +249,6 @@ export default {
   .storie__button-svg {
     display: inline-block;
     margin-top: 10px;
-  }
-
-  #mobileRemove {
-    display: none;
   }
 
   .storie__next-buttons {
