@@ -10,13 +10,15 @@
         class="popup__input"
         placeholder="Напишите тут"
       />
-      <button type class="popup__button popup__button_back">Назад</button>
-      <button type class="popup__button popup__button_next">Далее</button>
+      <ButtonNext />
+      <ButtonBack />
     </form>
   </div>
 </template>
 
 <script>
+import ButtonNext from '@/components/UI/ButtonNext';
+import ButtonBack from '@/components/UI/ButtonBack';
 export default {
   props: {
     title: {
@@ -29,6 +31,10 @@ export default {
       default: 'Вопрос',
       type: String,
     },
+  },
+  components: {
+    ButtonNext,
+    ButtonBack,
   },
 };
 </script>

@@ -1,5 +1,7 @@
 <template>
   <div>
+    <Popup><Quiz></Quiz> </Popup>
+
     <section class="promo">
       <h1 class="promo__title">#РАКЛЕЧИТСЯ</h1>
       <img class="promo__strelka" src="/strelka.svg" alt="Стрелка" />
