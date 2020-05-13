@@ -13,6 +13,7 @@
         </div>
       </div>
     </div>
+
     <div class="special__storie">
       <p class="special__storie-text">
         Я из военной семьи. Отец хоть и не был военным сам, но нас всех держал в
@@ -64,21 +65,25 @@
       </div>
     </div>
 
-    <div class="special-stories">
+    <SectionCards>
       <StoriesCard></StoriesCard>
       <StoriesCard></StoriesCard>
       <StoriesCard></StoriesCard>
-      <StoriesCard></StoriesCard>
-    </div>
-    <button class="special-storie__more">Больше статей</button>
+      <StoriesCard id="cardRemove"></StoriesCard>
+    </SectionCards>
+    <ButtonMoreStory />
   </section>
 </template>
 
 <script>
 import StoriesCard from '@/components/StoriesCard';
+import SectionCards from '@/components/SectionCards';
+import ButtonMoreStory from '@/components/ButtonMoreStory';
 export default {
   components: {
     StoriesCard,
+    SectionCards,
+    ButtonMoreStory,
   },
 };
 </script>
@@ -212,17 +217,6 @@ export default {
   color: #666666;
 }
 
-.special-storie__more {
-  min-width: 100%;
-  height: 82px;
-  margin: 70px 120px;
-  font-size: 16px;
-  line-height: 20px;
-  color: black;
-  background: #fbfbfb;
-  border: none;
-}
-
 @media screen and (max-width: 1280px) {
   .special {
     margin: 100px 50px 0;
@@ -234,13 +228,7 @@ export default {
   }
 
   .special__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     max-width: 602px;
-    border-style: solid none;
-    border-color: #efefef;
-    border-width: 1px;
   }
 
   .special__info-title {
@@ -255,6 +243,80 @@ export default {
 
   .special-stories {
     flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .special {
+    margin: 100px 50px 0;
+  }
+
+  .special__image {
+    max-width: 407px;
+    max-height: 407px;
+  }
+
+  .special__info {
+    max-width: 477px;
+  }
+
+  .special__info-title {
+    font-size: 30px;
+  }
+
+  .special__storie {
+    width: 720px;
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+
+  .special-stories {
+    flex-wrap: nowrap;
+  }
+
+  .special__info-link {
+    font-size: 16px;
+  }
+
+  .special__info-date {
+    font-size: 16px;
+  }
+
+  .special__storie-text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .special {
+    margin: 100px 50px 0;
+  }
+
+  .special__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .special__image {
+    max-width: 407px;
+    max-height: 407px;
+  }
+
+  .special__info {
+    max-width: 477px;
+  }
+
+  .special__storie {
+    width: 720px;
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+
+  #cardRemove {
+    display: none;
   }
 }
 </style>

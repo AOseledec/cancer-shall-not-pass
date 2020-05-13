@@ -206,7 +206,7 @@ export default {
 
   .storie__next-buttons {
     width: 260px;
-    height: 70px;
+    height: 60px;
     overflow: hidden;
     flex-wrap: nowrap;
     margin-top: 20px;
