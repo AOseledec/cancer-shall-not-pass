@@ -6,9 +6,9 @@
       </h3>
     </div>
     <nav class="header__nav">
-      <a href="" class="nav__link nav__link_isActive">Главная</a>
-      <a href="" class="nav__link">Истории</a>
-      <a href="" class="nav__link">Рассказать историю</a>
+      <a href="/index" class="nav__link">Главная</a>
+      <a href="/stories/index" class="nav__link">Истории</a>
+      <a href="components/Popup" class="nav__link">Рассказать историю</a>
     </nav>
   </header>
 </template>
@@ -40,6 +40,7 @@ export default {};
 
 .header__nav {
   margin: 26px 60px 26px auto;
+  display: flex;
 }
 
 .nav__link {
@@ -52,8 +53,22 @@ export default {};
   color: #000000;
 }
 
+.nav__link:first-child {
+  margin: 0;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
 .nav__link_isActive {
   text-decoration: underline;
   color: #000000;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__link {
+    font-size: 16px;
+  }
 }
 </style>
