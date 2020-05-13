@@ -21,13 +21,13 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 300px;
-
-  margin: 20px;
+  margin: 20px 0 20px;
   background: white;
 }
 
 .storie__image {
   min-width: 100%;
+  max-height: 100%;
   background: #ededed;
 }
 
@@ -49,6 +49,7 @@ a {
 @media screen and (max-width: 1362px) {
   .storie__container {
     max-width: 285px;
+    margin: 20px 0 20px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -93,11 +94,6 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .storie__container {
-    max-width: 216px;
-    margin: 40px 10px 0 10px;
-  }
-
   .titel_h3 {
     font-size: 18px;
   }

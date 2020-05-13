@@ -1,5 +1,5 @@
 <template>
-  <div class="section-cards"></div>
+  <div class="section-cards"><slot> </slot></div>
 </template>
 
 <script>
@@ -9,8 +9,8 @@ export default {};
 <style scoped>
 .section-cards {
   display: flex;
-  max-width: 100%;
+  width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 </style>

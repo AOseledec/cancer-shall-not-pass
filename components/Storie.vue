@@ -27,7 +27,7 @@
           </button>
         </div>
       </form>
-      <div class="storie__cards">
+      <SectionCards id="storie-wrapped">
         <StoriesCard />
         <StoriesCard />
         <StoriesCard />
@@ -44,7 +44,7 @@
         <StoriesCard />
         <StoriesCard />
         <StoriesCard />
-      </div>
+      </SectionCards>
       <div class="storie__next-buttons">
         <ButtonNumberPage v-text="1"></ButtonNumberPage>
         <ButtonNumberPage v-text="2"></ButtonNumberPage>
@@ -61,11 +61,13 @@
 <script>
 import StoriesCard from '@/components/StoriesCard';
 import ButtonNumberPage from '@/components/ButtonNumberPage';
+import SectionCards from '@/components/SectionCards';
 
 export default {
   components: {
     StoriesCard,
     ButtonNumberPage,
+    SectionCards,
   },
 };
 </script>
@@ -74,6 +76,11 @@ export default {
 .wrapped {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+#storie-wrapped {
+  margin: 0 60px 0 60px;
   justify-content: center;
 }
 
@@ -137,6 +144,10 @@ export default {
 }
 
 @media screen and (max-width: 1280px) {
+  #storie-wrapped {
+    margin: 0 50px 0 50px;
+  }
+
   .storie__title {
     margin: 90px 50px 50px 50px;
   }
@@ -170,6 +181,10 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  #storie-wrapped {
+    margin: 0 40px 0 40px;
+  }
+
   .storie__title {
     margin: 80px auto 50px auto;
     max-width: 380px;
@@ -215,6 +230,10 @@ export default {
 }
 
 @media screen and (max-width: 320px) {
+  #storie-wrapped {
+    margin: 0;
+  }
+
   .storie__title {
     margin: 80px auto 50px auto;
     max-width: 290px;

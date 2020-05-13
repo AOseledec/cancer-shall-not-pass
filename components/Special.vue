@@ -64,8 +64,7 @@
         Поделитесь этой статьей в своих социальных сетях ↗
       </div>
     </div>
-
-    <SectionCards>
+    <SectionCards id="special-section-cards">
       <StoriesCard></StoriesCard>
       <StoriesCard></StoriesCard>
       <StoriesCard></StoriesCard>
@@ -106,7 +105,7 @@ export default {
 
 .special__image {
   width: 580px;
-  height: 580px;
+  height: 100%;
   background: #ededed;
 }
 
@@ -265,7 +264,7 @@ export default {
   }
 
   .special__storie {
-    width: 720px;
+    width: 640px;
     padding-top: 110px;
     padding-bottom: 90px;
   }
@@ -278,6 +277,10 @@ export default {
     font-size: 16px;
   }
 
+  .special__storie-link {
+    height: 70px;
+  }
+
   .special__info-date {
     font-size: 16px;
   }
@@ -288,25 +291,34 @@ export default {
   }
 }
 
+@media screen and (max-width: 970px) {
+  #cardRemove {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .special {
-    margin: 100px 50px 0;
+    margin: 100px 40px 0;
   }
 
   .special__head {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
   }
 
   .special__image {
-    max-width: 407px;
-    max-height: 407px;
+    max-width: 420px;
+    max-height: 420px;
+    margin-top: 160px;
   }
 
   .special__info {
-    max-width: 477px;
+    position: absolute;
+    max-width: 640px;
+    height: 660px;
   }
 
   .special__storie {
@@ -317,6 +329,56 @@ export default {
 
   #cardRemove {
     display: none;
+  }
+}
+
+@media screen and (max-width: 661px) {
+  .special {
+    margin: 100px 15px 0;
+  }
+
+  .special__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 290px;
+  }
+
+  .special__image {
+    width: 290px;
+    height: 290px;
+    margin-top: 110px;
+  }
+
+  .special__info {
+    position: absolute;
+    width: 290px;
+    height: 470px;
+  }
+
+  .special__info-title {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    width: 290px;
+  }
+  .special__storie {
+    width: 720px;
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+
+  .special__info-link {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  #cardRemove {
+    display: none;
+  }
+
+  .special__storie {
+    max-width: 100%;
   }
 }
 </style>
