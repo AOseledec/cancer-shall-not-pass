@@ -1,6 +1,6 @@
 <template>
   <div class="form">
-    <p class="form__text">Заполнить форму</p>
+    <a href="" class="form__text">Заполнить форму</a>
   </div>
 </template>
 
@@ -23,5 +23,9 @@ export default {};
   font-size: 16px;
   line-height: 19px;
   padding-top: 17px;
+}
+
+.form:hover {
+  opacity: 0.9;
 }
 </style>

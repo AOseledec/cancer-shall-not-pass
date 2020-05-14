@@ -1,10 +1,11 @@
 <template>
   <div>
+    <Popup><Quiz></Quiz> </Popup>
+
     <section class="promo">
       <h1 class="promo__title">#РАКЛЕЧИТСЯ</h1>
       <img class="promo__strelka" src="/strelka.svg" alt="Стрелка" />
     </section>
-
     <section class="video-stories">
       <div class="video-stories__texts">
         <p class="video-stories__text-title">
@@ -131,11 +132,15 @@
 <script>
 import Graficks from '@/components/Graficks.vue';
 import Storie from '@/components/Storie.vue';
+import Popup from '@/components/Popup.vue';
+import Quiz from '@/components/Quiz.vue';
 
 export default {
   components: {
     Graficks,
     Storie,
+    Popup,
+    Quiz,
   },
 };
 </script>
