@@ -66,8 +66,6 @@ export default {};
 .graf {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
-  min-width: 1440px;
 }
 
 .graf__title {

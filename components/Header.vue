@@ -18,7 +18,7 @@ export default {};
 </script>
 
 <style scoped>
-.header {
+/*.header {
   margin: 0 auto;
   max-width: 1440px;
   display: flex;
@@ -64,6 +64,7 @@ export default {};
 .nav__link_isActive {
   text-decoration: underline;
   color: #000000;
+
 }
 
 @media screen and (max-width: 1024px) {

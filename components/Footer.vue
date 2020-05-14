@@ -118,6 +118,7 @@ export default {
   font-size: 18px;
   line-height: 18px;
   color: #898989;
+  border: 1px solid red;
 }
 
 @media screen and (max-width: 1280px) {

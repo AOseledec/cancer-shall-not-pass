@@ -1,263 +1,94 @@
 <template>
   <div>
-    <section class="stories">
+    <section class="wrapped">
       <form class="storie__find">
-        <h3 class="storie__title">Истории неизлечимых привычек</h3>
+        <h2 class="storie__title">Истории неизлечимых привычек</h2>
         <div class="storie__form">
           <input class="storie_input" type="search" />
-          <button class="storie__button">Поиск</button>
+          <button class="storie__button">
+            <svg
+              class="storie__button-svg"
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="5.91304" cy="5.91304" r="5.41304" stroke="white" />
+              <line
+                x1="10.0918"
+                y1="10.0813"
+                x2="16.3527"
+                y2="16.3421"
+                stroke="white"
+              />
+            </svg>
+            Поиск
+          </button>
         </div>
       </form>
-      <div class="storie__cards">
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Познер</h3>
-            <p class="storie__quote">
-              Я боюсь акул — и, в отличии от рака, это не лечится.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Александр Тарханов</h3>
-            <p class="storie__quote">
-              Я не могу победить свою пунктуальность в отличии от рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Познер</h3>
-            <p class="storie__quote">
-              Я боюсь акул — и, в отличии от рака, это не лечится.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Александр Тарханов</h3>
-            <p class="storie__quote">
-              Я не могу победить свою пунктуальность в отличии от рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Познер</h3>
-            <p class="storie__quote">
-              Я боюсь акул — и, в отличии от рака, это не лечится.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Александр Тарханов</h3>
-            <p class="storie__quote">
-              Я не могу победить свою пунктуальность в отличии от рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Познер</h3>
-            <p class="storie__quote">
-              Я боюсь акул — и, в отличии от рака, это не лечится.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Александр Тарханов</h3>
-            <p class="storie__quote">
-              Я не могу победить свою пунктуальность в отличии от рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Познер</h3>
-            <p class="storie__quote">
-              Я боюсь акул — и, в отличии от рака, это не лечится.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Александр Тарханов</h3>
-            <p class="storie__quote">
-              Я не могу победить свою пунктуальность в отличии от рака.
-            </p>
-          </div>
-        </div>
-        <div class="storie__container">
-          <div class="storie">
-            <img class="storie__image" src="" alt="" />
-            <h3 class="storie__author">Владимир Тен</h3>
-            <p class="storie__quote">
-              Я всегда читаю книги с конца, - и это не лечится, в отличие от
-              рака.
-            </p>
-          </div>
-        </div>
-      </div>
+      <SectionCards id="storie-wrapped">
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+        <StoriesCard />
+      </SectionCards>
       <div class="storie__next-buttons">
-        <button class="storie__next-button">1</button>
-        <button class="storie__next-button">2</button>
-        <button class="storie__next-button">3</button>
-        <button class="storie__next-button">4</button>
-        <button class="storie__next-button">5</button>
-        <button class="storie__next-button">6</button>
-        <button class="storie__next-button">7</button>
+        <ButtonNumberPage v-text="1"></ButtonNumberPage>
+        <ButtonNumberPage v-text="2"></ButtonNumberPage>
+        <ButtonNumberPage v-text="3"></ButtonNumberPage>
+        <ButtonNumberPage v-text="4"></ButtonNumberPage>
+        <ButtonNumberPage v-text="5"></ButtonNumberPage>
+        <ButtonNumberPage v-text="6"></ButtonNumberPage>
+        <ButtonNumberPage v-text="7"></ButtonNumberPage>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-export default {};
+import StoriesCard from '@/components/StoriesCard';
+import ButtonNumberPage from '@/components/ButtonNumberPage';
+import SectionCards from '@/components/SectionCards';
+
+export default {
+  components: {
+    StoriesCard,
+    ButtonNumberPage,
+    SectionCards,
+  },
+};
 </script>
 
 <style scoped>
-.stories {
+.wrapped {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+#storie-wrapped {
+  margin: 0 60px 0 60px;
   justify-content: center;
 }
 
 .storie__cards {
   display: flex;
+  max-width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.storie__container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 300px;
-  margin: 20px;
-  background: white;
-}
-
-.storie__image {
-  width: 300px;
-  height: 300px;
-
-  background: #ededed;
-}
-
-.storie__author {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 22px;
-  margin-top: 20px;
-  margin-bottom: 0;
-  color: #000000;
-}
-
-.storie__quote {
-  max-width: 220px;
-  margin-top: 14px;
-  font-size: 14px;
-  line-height: 18px;
-  color: #666666;
-}
-
-.storie {
-  display: flex;
-  flex-direction: column;
-  width: 382px;
-}
-
-@media screen and (max-width: 1024px) {
-  .storie {
-    width: 90%;
-    max-width: calc((100% - 57px) / 3);
-  }
-}
-
-.storie__tell-a-story {
-  width: 1320px;
-  height: 129px;
-  display: flex;
-  justify-content: center;
-  background: #613a93;
-}
-
-.storie__text {
-  justify-content: center;
-  max-width: 750px;
-  min-width: 750px;
-  text-align: center;
-  vertical-align: auto;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 46px;
-  color: white;
-}
-
-.storie__text-span {
-  font-weight: bold;
 }
 
 .storie__find {
@@ -270,27 +101,32 @@ export default {};
 
 .storie__title {
   margin: 100px 60px 60px 60px;
-  width: 413px;
+  max-width: 413px;
   font-weight: 600;
   font-size: 32px;
-  line-height: 36px;
 }
 
 .storie__form {
-  flex-direction: row;
+  display: flex;
+  max-width: 100%;
+  height: 52px;
+  margin-right: 60px;
+  margin-left: 60px;
 }
 
 .storie_input {
-  margin-left: 60px;
-  margin-right: 10px;
-  width: 1074px;
-  height: 52px;
+  width: 100%;
+  max-height: 100%;
+  margin-left: 0;
+  margin-right: auto;
   border: 1px solid #e8e8e8;
 }
 
 .storie__button {
   width: 226px;
-  height: 52px;
+  max-height: 100%;
+  margin-right: 0;
+  margin-left: 20px;
   font-size: 16px;
   line-height: 20px;
   color: white;
@@ -298,18 +134,145 @@ export default {};
   outline: none;
 }
 
-.storie__next-buttons {
-  display: flex;
-  flex-direction: row;
-  padding: 120px 100px;
+.storie__button-svg {
+  display: none;
 }
 
-.storie__next-button {
-  width: 58px;
-  height: 58px;
-  margin: 5px;
-  background: #f4f4f4;
-  border: none;
-  font-size: 18px;
+.storie__next-buttons {
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1280px) {
+  #storie-wrapped {
+    margin: 0 50px 0 50px;
+  }
+
+  .storie__title {
+    margin: 90px 50px 50px 50px;
+  }
+
+  .storie__form {
+    height: 48px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .storie__next-buttons {
+    margin-top: 130px;
+    margin-bottom: 90px;
+  }
+  .storie__next-buttons {
+    margin-top: 130px;
+    margin-bottom: 90px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .storie__title {
+    max-width: 280px;
+    font-size: 1.5em;
+  }
+
+  .storie__form {
+    height: 46px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #storie-wrapped {
+    margin: 0 40px 0 40px;
+  }
+
+  .storie__title {
+    margin: 80px auto 50px auto;
+    max-width: 380px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .storie__form {
+    height: 46px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .storie__find {
+    margin-bottom: 20px;
+  }
+
+  .storie_input {
+    max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 454px) {
+  .storie__button {
+    width: 46px;
+    margin-left: 6px;
+    font-size: 0;
+  }
+
+  .storie__button-svg {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .storie__next-buttons {
+    width: 260px;
+    height: 60px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #storie-wrapped {
+    margin: 0;
+  }
+
+  .storie__title {
+    margin: 80px auto 50px auto;
+    max-width: 290px;
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .storie__form {
+    height: 46px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .storie__find {
+    margin-bottom: 20px;
+  }
+
+  .storie_input {
+    max-width: 460px;
+  }
+
+  .storie__button {
+    width: 46px;
+    margin-left: 6px;
+    font-size: 0;
+  }
+
+  .storie_input {
+    max-width: 238px;
+  }
+
+  .storie__button-svg {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .storie__next-buttons {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
 }
 </style>

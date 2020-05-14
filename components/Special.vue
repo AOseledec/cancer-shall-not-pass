@@ -1,7 +1,7 @@
 <template>
-  <section class="special">
+  <section class="wrapped special">
     <div class="special__head">
-      <img class="special__image" src="" alt="" />
+      <img class="special__image" src="https://picsum.photos/195" alt="" />
       <div class="special__info">
         <h2 class="special__info-title">
           <span class="special__span">Александр Тарханов:</span>
@@ -13,6 +13,7 @@
         </div>
       </div>
     </div>
+
     <div class="special__storie">
       <p class="special__storie-text">
         Я из военной семьи. Отец хоть и не был военным сам, но нас всех держал в
@@ -63,57 +64,35 @@
         Поделитесь этой статьей в своих социальных сетях ↗
       </div>
     </div>
-
-    <div class="special-stories">
-      <div class="special-storie__container">
-        <div class="special-storie">
-          <img class="special-storie__image" src="" alt="" />
-          <h3 class="special-storie__author">Владимир Тен</h3>
-          <p class="special-storie__quote">
-            Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-          </p>
-        </div>
-      </div>
-      <div class="special-storie__container">
-        <div class="special-storie">
-          <img class="special-storie__image" src="" alt="" />
-          <h3 class="special-storie__author">Владимир Тен</h3>
-          <p class="special-storie__quote">
-            Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-          </p>
-        </div>
-      </div>
-      <div class="special-storie__container">
-        <div class="special-storie">
-          <img class="special-storie__image" src="" alt="" />
-          <h3 class="special-storie__author">Владимир Тен</h3>
-          <p class="special-storie__quote">
-            Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-          </p>
-        </div>
-      </div>
-      <div class="special-storie__container">
-        <div class="special-storie">
-          <img class="special-storie__image" src="" alt="" />
-          <h3 class="special-storie__author">Владимир Тен</h3>
-          <p class="special-storie__quote">
-            Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-          </p>
-        </div>
-      </div>
-    </div>
-    <button class="special-storie__more">Больше статей</button>
+    <SectionCards id="special-section-cards">
+      <StoriesCard></StoriesCard>
+      <StoriesCard></StoriesCard>
+      <StoriesCard></StoriesCard>
+      <StoriesCard id="cardRemove"></StoriesCard>
+    </SectionCards>
+    <ButtonMoreStory />
   </section>
 </template>
 
 <script>
-export default {};
+import StoriesCard from '@/components/StoriesCard';
+import SectionCards from '@/components/SectionCards';
+import ButtonMoreStory from '@/components/ButtonMoreStory';
+export default {
+  components: {
+    StoriesCard,
+    SectionCards,
+    ButtonMoreStory,
+  },
+};
 </script>
 
 <style scoped>
-.special {
+.wrapped {
   display: flex;
   flex-wrap: wrap;
+}
+.special {
   justify-content: center;
   margin: 100px 60px 0;
 }
@@ -126,7 +105,7 @@ export default {};
 
 .special__image {
   width: 580px;
-  height: 580px;
+  height: 100%;
   background: #ededed;
 }
 
@@ -237,14 +216,169 @@ export default {};
   color: #666666;
 }
 
-.special-storie__more {
-  min-width: 100%;
-  height: 82px;
-  margin: 70px 120px;
-  font-size: 16px;
-  line-height: 20px;
-  color: black;
-  background: #fbfbfb;
-  border: none;
+@media screen and (max-width: 1280px) {
+  .special {
+    margin: 100px 50px 0;
+  }
+
+  .special__image {
+    max-width: 518px;
+    max-height: 518px;
+  }
+
+  .special__info {
+    max-width: 602px;
+  }
+
+  .special__info-title {
+    font-size: 34px;
+  }
+
+  .special__storie {
+    width: 720px;
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+
+  .special-stories {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .special {
+    margin: 100px 50px 0;
+  }
+
+  .special__image {
+    max-width: 407px;
+    max-height: 407px;
+  }
+
+  .special__info {
+    max-width: 477px;
+  }
+
+  .special__info-title {
+    font-size: 30px;
+  }
+
+  .special__storie {
+    width: 640px;
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+
+  .special-stories {
+    flex-wrap: nowrap;
+  }
+
+  .special__info-link {
+    font-size: 16px;
+  }
+
+  .special__storie-link {
+    height: 70px;
+  }
+
+  .special__info-date {
+    font-size: 16px;
+  }
+
+  .special__storie-text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  #cardRemove {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .special {
+    margin: 100px 40px 0;
+  }
+
+  .special__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .special__image {
+    max-width: 420px;
+    max-height: 420px;
+    margin-top: 160px;
+  }
+
+  .special__info {
+    position: absolute;
+    max-width: 640px;
+    height: 660px;
+  }
+
+  .special__storie {
+    width: 720px;
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+
+  #cardRemove {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 661px) {
+  .special {
+    margin: 100px 15px 0;
+  }
+
+  .special__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 290px;
+  }
+
+  .special__image {
+    width: 290px;
+    height: 290px;
+    margin-top: 110px;
+  }
+
+  .special__info {
+    position: absolute;
+    width: 290px;
+    height: 470px;
+  }
+
+  .special__info-title {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    width: 290px;
+  }
+  .special__storie {
+    width: 720px;
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+
+  .special__info-link {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  #cardRemove {
+    display: none;
+  }
+
+  .special__storie {
+    max-width: 100%;
+  }
 }
 </style>
