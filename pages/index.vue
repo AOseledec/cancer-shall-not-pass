@@ -1,9 +1,10 @@
 <template>
-  <div>
+  <main>
     <section class="promo">
       <h1 class="promo__title">#РАКЛЕЧИТСЯ</h1>
       <img class="promo__strelka" src="/strelka.svg" alt="Стрелка" />
     </section>
+
     <Container class="video-stories">
       <div class="video-stories__texts">
         <p class="video-stories__text-title">
@@ -31,100 +32,95 @@
       </div>
     </Container>
 
-    <section class="block-purple">
-      <h2 class="block-purple__text">
-        И В ОТЛИЧИЕ ОТ РАКА,
-        <span class="block-purple__text-extractor">#ЭТОНЕЛЕЧИТСЯ</span>
-      </h2>
-    </section>
+    <Container>
+      <StorieIndex>
+        <Split>И В ОТЛИЧИЕ ОТ РАКА,</Split>
+      </StorieIndex>
+    </Container>
 
-    <section>
-      <Storie />
-    </section>
-
-    <section class="block-purple">
-      <h2 class="block-purple__text">
-        РАССКАЗЫВАЙТЕ ВАШИ ИСТОРИИ В ИНСТАГРАМ
-        <span class="block-purple__text-extractor">#ЭТОНЕЛЕЧИТСЯ</span>
-      </h2>
-    </section>
-
-    <section class="insta">
-      <div class="insta__text">
-        <p class="insta__text-title">Инстаграм</p>
-        <p class="insta__text-paragraph">
-          Два раза в неделю мы просматриваем все посты по хештегу #этонелечится.
-          Все истории, где нет нецензурных выражений и запрещенного контента
-          попадают сюда. Следите за правильным написанием хештега, чтобы мы не
-          пропустили вашу историю.
-        </p>
+    <Container>
+      <Split>РАССКАЗЫВАЙТЕ ВАШИ ИСТОРИИ В ИНСТАГРАМ</Split>
+      <div class="insta">
+        <div class="insta__text">
+          <p class="insta__text-title">Инстаграм</p>
+          <p class="insta__text-paragraph">
+            Два раза в неделю мы просматриваем все посты по хештегу
+            #этонелечится. Все истории, где нет нецензурных выражений и
+            запрещенного контента попадают сюда. Следите за правильным
+            написанием хештега, чтобы мы не пропустили вашу историю.
+          </p>
+        </div>
+        <div class="insta__grid">
+          <img src="https://picsum.photos/195" class="insta__grid-image" />
+          <img src="https://picsum.photos/195" class="insta__grid-image" />
+          <img src="https://picsum.photos/195" class="insta__grid-image" />
+          <img src="https://picsum.photos/195" class="insta__grid-image" />
+          <img src="https://picsum.photos/195" class="insta__grid-image" />
+          <img src="https://picsum.photos/195" class="insta__grid-image" />
+          <img src="https://picsum.photos/195" class="insta__grid-image" />
+          <img src="https://picsum.photos/195" class="insta__grid-image" />
+        </div>
       </div>
-      <div class="insta__grid">
-        <img src="https://picsum.photos/195" class="insta__grid-image" />
-        <img src="https://picsum.photos/195" class="insta__grid-image" />
-        <img src="https://picsum.photos/195" class="insta__grid-image" />
-        <img src="https://picsum.photos/195" class="insta__grid-image" />
-        <img src="https://picsum.photos/195" class="insta__grid-image" />
-        <img src="https://picsum.photos/195" class="insta__grid-image" />
-        <img src="https://picsum.photos/195" class="insta__grid-image" />
-        <img src="https://picsum.photos/195" class="insta__grid-image" />
-      </div>
-    </section>
+    </Container>
 
     <section class="story">
-      <p class="story__tell-title">Расскажите свою историю</p>
-      <div class="story__main">
-        <p class="story__tell-text">
-          Мы публикуем новые истории на сайте раз в неделю. Есть 2 варианта
-          поделиться своей историей неизлечимых привычек, навязчивых идей и
-          болезненных привязанностей.
-        </p>
-        <ul class="story__text-choices">
-          <li class="story__text-choice story__text-choice_black">
-            1-й вариант
-          </li>
-          <li class="story__text-choice">2-й вариант</li>
-        </ul>
-        <p class="story__text-forma">
-          Заполнить подробную форму прямо на сайте и мы опубликуем вашу историю
-          после проверки. Пожалуйста, заполняйте все пункты корректно, если вы
-          испытаете какие-то сложности, воспользуйтесь 2-м вариантом.
-        </p>
-      </div>
+      <Container>
+        <p class="story__tell-title">Расскажите свою историю</p>
+        <div class="story__main">
+          <p class="story__tell-text">
+            Мы публикуем новые истории на сайте раз в неделю. Есть 2 варианта
+            поделиться своей историей неизлечимых привычек, навязчивых идей и
+            болезненных привязанностей.
+          </p>
+          <ul class="story__text-choices">
+            <li class="story__text-choice story__text-choice_black">
+              1-й вариант
+            </li>
+            <li class="story__text-choice">2-й вариант</li>
+          </ul>
+          <p class="story__text-forma">
+            Заполнить подробную форму прямо на сайте и мы опубликуем вашу
+            историю после проверки. Пожалуйста, заполняйте все пункты корректно,
+            если вы испытаете какие-то сложности, воспользуйтесь 2-м вариантом.
+          </p>
+        </div>
+      </Container>
     </section>
 
-    <section>
+    <Container>
       <Graficks />
-    </section>
+    </Container>
 
     <section class="project">
-      <h3 class="project__title">#РАКЛЕЧИТСЯ</h3>
-      <p class="story__tell-title story__tell-title_project">О проекте</p>
-      <div class="story__main ">
-        <p class="story__tell-text story__tell-text_project">
-          Этот проект был создан благотворительным фондом Константина
-          Хабенского.
-        </p>
-        <ul class="story__text-choices story__text-choices_project">
-          <li class="story__text-choice story__text-choice_white">
-            Рак Лечится
-          </li>
-          <li class="story__text-choice">Фонд Хабенского</li>
-        </ul>
-        <p class="story__text-forma story__text-forma_project">
-          Есть вещи, которые не лечатся. Особенности характера, страстные
-          увлечения, привычки, ставшие частью нашего «я», фобии, которые мы
-          приобрели в детстве. Список можно продолжать до бесконечности, но одна
-          болезнь в него точно не войдет. Эта болезнь — рак. Рак лечится, и
-          лучшее доказательство — люди с их неизлечимыми особенностями, которые
-          сумели победить рак. Рак лечится — проект Благотворительного Фонда
-          Константина Хабенского и Leo Burnett Moscow. С его помощью мы надеемся
-          изменить отношение людей к раку и заставить каждого поверить:
-          онкологическое заболевание — это не приговор.
-        </p>
-      </div>
+      <Container>
+        <h3 class="project__title">#РАКЛЕЧИТСЯ</h3>
+        <p class="story__tell-title story__tell-title_project">О проекте</p>
+        <div class="story__main ">
+          <p class="story__tell-text story__tell-text_project">
+            Этот проект был создан благотворительным фондом Константина
+            Хабенского.
+          </p>
+          <ul class="story__text-choices story__text-choices_project">
+            <li class="story__text-choice story__text-choice_white">
+              Рак Лечится
+            </li>
+            <li class="story__text-choice">Фонд Хабенского</li>
+          </ul>
+          <p class="story__text-forma story__text-forma_project">
+            Есть вещи, которые не лечатся. Особенности характера, страстные
+            увлечения, привычки, ставшие частью нашего «я», фобии, которые мы
+            приобрели в детстве. Список можно продолжать до бесконечности, но
+            одна болезнь в него точно не войдет. Эта болезнь — рак. Рак лечится,
+            и лучшее доказательство — люди с их неизлечимыми особенностями,
+            которые сумели победить рак. Рак лечится — проект Благотворительного
+            Фонда Константина Хабенского и Leo Burnett Moscow. С его помощью мы
+            надеемся изменить отношение людей к раку и заставить каждого
+            поверить: онкологическое заболевание — это не приговор.
+          </p>
+        </div>
+      </Container>
     </section>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -133,6 +129,8 @@ import Storie from '@/components/Storie';
 import Popup from '@/components/Popup';
 import Quiz from '@/components/Quiz';
 import Container from '@/components/Container';
+import Split from '@/components/Split';
+import StorieIndex from '@/components/StorieIndex';
 
 export default {
   components: {
@@ -141,6 +139,8 @@ export default {
     Popup,
     Quiz,
     Container,
+    Split,
+    StorieIndex,
   },
 };
 </script>
