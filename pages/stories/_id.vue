@@ -1,7 +1,7 @@
 <template>
   <section class="wrapped special">
     <div class="special__head">
-      <img class="special__image" src="https://picsum.photos/195" alt="" />
+      <img class="special__image" src="https://picsum.photos/195" alt="фото" />
       <div class="special__info">
         <h2 class="special__info-title">
           <span class="special__span">Александр Тарханов:</span>
@@ -65,10 +65,7 @@
       </div>
     </div>
     <SectionCards id="special-section-cards">
-      <StoriesCard></StoriesCard>
-      <StoriesCard></StoriesCard>
-      <StoriesCard></StoriesCard>
-      <StoriesCard id="cardRemove"></StoriesCard>
+      <StoriesCard v-for="_id in 4" />
     </SectionCards>
   </section>
 </template>
@@ -113,9 +110,7 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   width: 680px;
-  border-style: solid none;
-  border-color: #efefef;
-  border-width: 1px;
+  border: 1px solid #efefef;
 }
 
 .special__info-title {
@@ -166,9 +161,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  border-style: solid none;
-  border-color: #efefef;
-  border-width: 1px;
+  border: 1px solid #efefef;
 }
 
 .special-stories {

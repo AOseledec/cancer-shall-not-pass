@@ -9,8 +9,8 @@ export default {};
 <style scoped>
 .section-cards {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 </style>

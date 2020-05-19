@@ -2,7 +2,7 @@
   <div>
     <section class="graf">
       <h2 class="graf__title">Статистика по онкозаболеваниям</h2>
-      <div class="graf__conainer">
+      <div class="graf__container">
         <div class="graf__block">
           <h3 class="graf__block-title">
             Каждый 3-й в стране уверен, что рак неизлечим. А это примерно 48 918
@@ -71,17 +71,17 @@ export default {};
 .graf__title {
   width: 300px;
   margin-top: 100px;
-  margin-left: 60px;
   font-weight: 600;
   font-size: 32px;
   line-height: 36px;
 }
 
-.graf__conainer {
+.graf__container {
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-between;
-  margin: 70px 60px 100px 60px;
+  margin: 70px 0 100px 0;
 }
 
 .graf__block {
