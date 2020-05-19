@@ -125,7 +125,7 @@
 
 <script>
 import Graficks from '@/components/Graficks';
-import Story from '@/components/Story';
+
 import Popup from '@/components/Popup';
 import Quiz from '@/components/Quiz';
 import Container from '@/components/Container';
@@ -135,7 +135,7 @@ import StorieIndex from '@/components/StorieIndex';
 export default {
   components: {
     Graficks,
-    Storie,
+
     Popup,
     Quiz,
     Container,
