@@ -1,15 +1,15 @@
 <template>
   <div>
-    <Storie></Storie>
+    <Story></Story>
   </div>
 </template>
 
 <script>
-import Storie from '@/components/Storie';
+import Story from '@/components/Story';
 
 export default {
   components: {
-    Storie: Storie,
+    Story: Story,
   },
 };
 </script>

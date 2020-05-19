@@ -125,7 +125,7 @@
 
 <script>
 import Graficks from '@/components/Graficks';
-import Storie from '@/components/Storie';
+import Story from '@/components/Story';
 import Popup from '@/components/Popup';
 import Quiz from '@/components/Quiz';
 import Container from '@/components/Container';

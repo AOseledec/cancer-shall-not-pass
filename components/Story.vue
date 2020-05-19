@@ -1,13 +1,13 @@
 <template>
   <div>
     <section class="wrapped">
-      <form class="storie__find">
-        <h2 class="storie__title">Истории неизлечимых привычек</h2>
-        <div class="storie__form">
-          <input class="storie_input" type="search" />
-          <button class="storie__button">
+      <form class="story__find">
+        <h2 class="story__title">Истории неизлечимых привычек</h2>
+        <div class="story__form">
+          <input class="story_input" type="search" />
+          <button class="story__button">
             <svg
-              class="storie__button-svg"
+              class="story__button-svg"
               width="17"
               height="17"
               viewBox="0 0 17 17"
@@ -27,7 +27,7 @@
           </button>
         </div>
       </form>
-      <SectionCards id="storie-wrapped">
+      <SectionCards id="story-wrapped">
         <StoriesCard />
         <StoriesCard />
         <StoriesCard />
@@ -45,7 +45,7 @@
         <StoriesCard />
         <StoriesCard />
       </SectionCards>
-      <div class="storie__next-buttons">
+      <div class="story__next-buttons">
         <ButtonNumberPage v-text="1"></ButtonNumberPage>
         <ButtonNumberPage v-text="2"></ButtonNumberPage>
         <ButtonNumberPage v-text="3"></ButtonNumberPage>
@@ -79,19 +79,19 @@ export default {
   justify-content: center;
 }
 
-#storie-wrapped {
+#story-wrapped {
   margin: 0 60px 0 60px;
   justify-content: center;
 }
 
-.storie__cards {
+.story__cards {
   display: flex;
   max-width: 100%;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.storie__find {
+.story__find {
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -99,14 +99,14 @@ export default {
   margin-bottom: 70px;
 }
 
-.storie__title {
+.story__title {
   margin: 100px 60px 60px 60px;
   max-width: 413px;
   font-weight: 600;
   font-size: 32px;
 }
 
-.storie__form {
+.story__form {
   display: flex;
   max-width: 100%;
   height: 52px;
@@ -114,7 +114,7 @@ export default {
   margin-left: 60px;
 }
 
-.storie_input {
+.story_input {
   width: 100%;
   max-height: 100%;
   margin-left: 0;
@@ -122,7 +122,7 @@ export default {
   border: 1px solid #e8e8e8;
 }
 
-.storie__button {
+.story__button {
   width: 226px;
   max-height: 100%;
   margin-right: 0;
@@ -134,46 +134,46 @@ export default {
   outline: none;
 }
 
-.storie__button-svg {
+.story__button-svg {
   display: none;
 }
 
-.storie__next-buttons {
+.story__next-buttons {
   margin-top: 140px;
   margin-bottom: 100px;
 }
 
 @media screen and (max-width: 1280px) {
-  #storie-wrapped {
+  #story-wrapped {
     margin: 0 50px 0 50px;
   }
 
-  .storie__title {
+  .story__title {
     margin: 90px 50px 50px 50px;
   }
 
-  .storie__form {
+  .story__form {
     height: 48px;
     margin-right: 50px;
     margin-left: 50px;
   }
 
-  .storie__next-buttons {
+  .story__next-buttons {
     margin-top: 130px;
     margin-bottom: 90px;
   }
-  .storie__next-buttons {
+  .story__next-buttons {
     margin-top: 130px;
     margin-bottom: 90px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .storie__title {
+  .story__title {
     max-width: 280px;
     font-size: 1.5em;
   }
 
-  .storie__form {
+  .story__form {
     height: 46px;
     margin-right: 50px;
     margin-left: 50px;
@@ -181,45 +181,45 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  #storie-wrapped {
+  #story-wrapped {
     margin: 0 40px 0 40px;
   }
 
-  .storie__title {
+  .story__title {
     margin: 80px auto 50px auto;
     max-width: 380px;
     text-align: center;
     font-size: 24px;
   }
 
-  .storie__form {
+  .story__form {
     height: 46px;
     margin-right: 40px;
     margin-left: 40px;
   }
 
-  .storie__find {
+  .story__find {
     margin-bottom: 20px;
   }
 
-  .storie_input {
+  .story_input {
     max-width: 460px;
   }
 }
 
 @media screen and (max-width: 454px) {
-  .storie__button {
+  .story__button {
     width: 46px;
     margin-left: 6px;
     font-size: 0;
   }
 
-  .storie__button-svg {
+  .story__button-svg {
     display: inline-block;
     margin-top: 10px;
   }
 
-  .storie__next-buttons {
+  .story__next-buttons {
     width: 260px;
     height: 60px;
     overflow: hidden;
@@ -230,47 +230,47 @@ export default {
 }
 
 @media screen and (max-width: 320px) {
-  #storie-wrapped {
+  #story-wrapped {
     margin: 0;
   }
 
-  .storie__title {
+  .story__title {
     margin: 80px auto 50px auto;
     max-width: 290px;
     text-align: left;
     font-size: 24px;
   }
 
-  .storie__form {
+  .story__form {
     height: 46px;
     margin-right: 15px;
     margin-left: 15px;
   }
 
-  .storie__find {
+  .story__find {
     margin-bottom: 20px;
   }
 
-  .storie_input {
+  .story_input {
     max-width: 460px;
   }
 
-  .storie__button {
+  .story__button {
     width: 46px;
     margin-left: 6px;
     font-size: 0;
   }
 
-  .storie_input {
+  .story_input {
     max-width: 238px;
   }
 
-  .storie__button-svg {
+  .story__button-svg {
     display: inline-block;
     margin-top: 10px;
   }
 
-  .storie__next-buttons {
+  .story__next-buttons {
     margin-top: 20px;
     margin-bottom: 50px;
   }

@@ -1,7 +1,7 @@
 <template>
   <section class="wrapped special">
     <div class="special__head">
-      <img class="special__image" src="https://picsum.photos/195" alt="" />
+      <img class="special__image" src="https://picsum.photos/195" alt="фото" />
       <div class="special__info">
         <h2 class="special__info-title">
           <span class="special__span">Александр Тарханов:</span>

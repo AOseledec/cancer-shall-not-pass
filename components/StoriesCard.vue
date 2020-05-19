@@ -1,6 +1,6 @@
 <template>
   <div class="storie__container">
-    <img class="storie__image" src="https://picsum.photos/195" alt="" />
+    <img class="storie__image" src="https://picsum.photos/195" alt="фото" />
     <h3 class="titel_h3">Владимир Познер</h3>
     <a href="_id" class="description">
       Я боюсь акул — и, в отличии от рака, это не лечится.
@@ -11,7 +11,7 @@
 <script>
 export default {};
 </script>
-
+H
 <style scoped>
 a {
   text-decoration: none;
