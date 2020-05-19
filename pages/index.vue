@@ -31,7 +31,18 @@
         </p>
       </div>
     </Container>
-
+    <Container>
+      <ButtonBack></ButtonBack>
+      <ButtonNext></ButtonNext>
+      <CancerCure></CancerCure>
+      <MoreArticles></MoreArticles>
+      <ShareButton></ShareButton>
+      <StoryButton></StoryButton>
+      <Variation></Variation>
+      <VideoButton></VideoButton>
+      <fillForm></fillForm>
+      <Banner>asd</Banner>
+    </Container>
     <Container>
       <StorieIndex>
         <Split>И В ОТЛИЧИЕ ОТ РАКА,</Split>
@@ -132,6 +143,17 @@ import Container from '@/components/Container';
 import Split from '@/components/Split';
 import StorieIndex from '@/components/StorieIndex';
 
+import Banner__arrow from '@/components/ui/Banner__arrow';
+import ButtonBack from '@/components/ui/ButtonBack';
+import ButtonNext from '@/components/ui/ButtonNext';
+import CancerCure from '@/components/ui/CancerCure';
+import MoreArticles from '@/components/ui/MoreArticles';
+import ShareButton from '@/components/ui/ShareButton';
+import StoryButton from '@/components/ui/StoryButton';
+import Variation from '@/components/ui/Variation';
+import VideoButton from '@/components/ui/VideoButton';
+import fillForm from '@/components/ui/fillForm';
+
 export default {
   components: {
     Graficks,
@@ -141,6 +163,17 @@ export default {
     Container,
     Split,
     StorieIndex,
+    //
+    ButtonBack,
+    ButtonNext,
+    CancerCure,
+    MoreArticles,
+    ShareButton,
+    StoryButton,
+    Variation,
+    VideoButton,
+    fillForm,
+    Banner: Banner__arrow,
   },
 };
 </script>
