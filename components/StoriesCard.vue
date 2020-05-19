@@ -1,6 +1,6 @@
 <template>
-  <div class="story__container">
-    <img class="story__image" src="https://picsum.photos/195" alt="фото" />
+  <div class="storie__container">
+    <img class="storie__image" src="https://picsum.photos/195" alt="" />
     <h3 class="titel_h3">Владимир Познер</h3>
     <a href="_id" class="description">
       Я боюсь акул — и, в отличии от рака, это не лечится.
@@ -11,20 +11,21 @@
 <script>
 export default {};
 </script>
-H
+
 <style scoped>
 a {
   text-decoration: none;
 }
-.story__container {
+.storie__container {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 300px;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 20px;
   background: white;
 }
 
-.story__image {
+.storie__image {
   min-width: 100%;
   max-height: 100%;
   background: #ededed;
@@ -46,40 +47,40 @@ a {
 }
 
 @media screen and (max-width: 1362px) {
-  .story__container {
+  .storie__container {
     max-width: 285px;
     margin: 20px 0 20px;
   }
 }
 @media screen and (max-width: 1300px) {
-  .story__container {
+  .storie__container {
     max-width: 265px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .story__container {
+  .storie__container {
     max-width: 265px;
   }
 }
 @media screen and (max-width: 1221px) {
-  .story__container {
+  .storie__container {
     max-width: 248px;
   }
 }
 @media screen and (max-width: 1153px) {
-  .story__container {
+  .storie__container {
     max-width: 238px;
   }
 }
 
 @media screen and (max-width: 1113px) {
-  .story__container {
+  .storie__container {
     max-width: 214px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .story__container {
+  .storie__container {
     max-width: 208px;
   }
 
@@ -103,7 +104,7 @@ a {
 }
 
 @media screen and (max-width: 320px) {
-  .story__container {
+  .storie__container {
     max-width: 290px;
     margin: 0 10px 30px 10px;
   }
