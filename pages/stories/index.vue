@@ -28,22 +28,7 @@
         </div>
       </form>
       <SectionCards id="story-wrapped">
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
-        <StoriesCard />
+        <StoriesCard v-for="index in 16" />
       </SectionCards>
       <div class="story__next-buttons">
         <ButtonNumberPage v-text="1"></ButtonNumberPage>
@@ -81,7 +66,7 @@ export default {
 
 #story-wrapped {
   margin: 0 60px 0 60px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .story__cards {

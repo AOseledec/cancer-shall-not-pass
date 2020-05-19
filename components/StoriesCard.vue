@@ -18,10 +18,9 @@ a {
 }
 .story__container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 300px;
-  margin: 20px 0 20px;
+  margin: 20px 0 20px 0;
   background: white;
 }
 
