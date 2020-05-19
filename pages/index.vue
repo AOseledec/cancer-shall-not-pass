@@ -4,7 +4,7 @@
       <h1 class="promo__title">#РАКЛЕЧИТСЯ</h1>
       <img class="promo__strelka" src="/strelka.svg" alt="Стрелка" />
     </section>
-    <section class="video-stories">
+    <Container class="video-stories">
       <div class="video-stories__texts">
         <p class="video-stories__text-title">
           Истории людей, победивших рак, но не свои привычки
@@ -29,7 +29,7 @@
           <a class="video-stories__sign-url">YouTube канале</a>
         </p>
       </div>
-    </section>
+    </Container>
 
     <section class="block-purple">
       <h2 class="block-purple__text">
@@ -128,10 +128,11 @@
 </template>
 
 <script>
-import Graficks from '@/components/Graficks.vue';
-import Storie from '@/components/Storie.vue';
-import Popup from '@/components/Popup.vue';
-import Quiz from '@/components/Quiz.vue';
+import Graficks from '@/components/Graficks';
+import Storie from '@/components/Storie';
+import Popup from '@/components/Popup';
+import Quiz from '@/components/Quiz';
+import Container from '@/components/Container';
 
 export default {
   components: {
@@ -139,16 +140,12 @@ export default {
     Storie,
     Popup,
     Quiz,
+    Container,
   },
 };
 </script>
 
 <style>
-.page {
-  max-width: 1440px;
-  margin: 0;
-}
-
 .promo {
   background-color: #613a93;
   color: #fff;
@@ -175,8 +172,7 @@ export default {
 .video-stories {
   display: flex;
   flex-direction: row;
-  margin: 100px auto 0;
-  max-width: 1320px;
+  padding-top: 100px;
 }
 
 .video-stories__text-title {
