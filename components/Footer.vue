@@ -1,36 +1,58 @@
 <template>
   <footer class="footer">
-    <div class="footer__up">
-      <div class="footer__gratitude">
-        <h2 class="footer__gratitude-text">
-          Спасибо всем, кто помог состояться этому проекту
-        </h2>
+    <Container>
+      <div class="footer__up">
+        <div class="footer__gratitude">
+          <h2 class="footer__gratitude-text">
+            Спасибо всем, кто помог состояться этому проекту
+          </h2>
+        </div>
+        <nav class="footer__nav">
+          <a href="" class="nav__link">Главная</a>
+          <a href="" class="nav__link">Истории</a>
+        </nav>
+        <div class="footer__social">
+          <p class="footer__social-links">
+            Мы в
+            <a
+              class="footer__social-links"
+              href="https://www.instagram.com/yndx.praktikum/"
+              >Инстаграме</a
+            >
+            и
+            <a
+              class="footer__social-links"
+              href="https://www.youtube.com/channel/UCTUyoZMfksbNIHfWJjwr5aQ"
+              >Youtube</a
+            >
+          </p>
+          <ShareButton />
+        </div>
       </div>
-      <nav class="footer__nav">
-        <a href="" class="nav__link">Главная</a>
-        <a href="" class="nav__link">Истории</a>
-      </nav>
-      <div class="footer__social">
-        <a href="" class="footer__social-links">Мы в Инстаграме и Youtube</a>
-        <ShareButton />
+      <div class="footer__down">
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">Рак Лечится 2020</p>
+          <p class="footer__copyright-text">
+            Сделано студентами
+            <a
+              href="https://praktikum.yandex.ru/"
+              class="footer__copyright-text"
+              >Яндекс Практикум</a
+            >
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="footer__down">
-      <div class="footer__copyright">
-        <p class="footer__copyright-text">Рак Лечится 2020</p>
-        <p class="footer__copyright-text">
-          Сделано студентами Яндекс Практикум
-        </p>
-      </div>
-    </div>
+    </Container>
   </footer>
 </template>
 
 <script>
 import ShareButton from '@/components/UI/ShareButton';
+import Container from '@/components/Container';
 export default {
   components: {
     ShareButton,
+    Container,
   },
 };
 </script>
@@ -40,19 +62,15 @@ export default {
   margin: auto;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  max-width: 100%;
   background-color: #fbfbfb;
 }
 
 .footer__up {
   display: flex;
-  margin-left: 60px;
-  margin-right: 60px;
 }
 
 .footer__down {
-  margin-left: 60px;
-  margin-right: 60px;
   margin-bottom: 60px;
 }
 
@@ -79,7 +97,7 @@ export default {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  margin-left: 34.5px;
+  margin-left: 34px;
   text-decoration: none;
   color: #000000;
 }
@@ -118,7 +136,6 @@ export default {
   font-size: 18px;
   line-height: 18px;
   color: #898989;
-  border: 1px solid red;
 }
 
 @media screen and (max-width: 1280px) {
@@ -178,12 +195,6 @@ export default {
   }
 
   @media screen and (max-width: 590px) {
-    .footer__copyright-text {
-      font-size: 14px;
-    }
-  }
-
-  @media screen and (max-width: 590px) {
     .footer__up {
       display: flex;
       flex-direction: column;
@@ -195,7 +206,7 @@ export default {
     }
 
     .footer__copyright-text {
-      font-size: 13px;
+      font-size: 14px;
       line-height: 18px;
       width: 100%;
     }

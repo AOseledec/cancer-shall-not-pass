@@ -65,7 +65,7 @@
       </div>
     </div>
     <SectionCards id="special-section-cards">
-      <StoriesCard v-for="_id in 4" />
+      <StoriesCard v-for="_id in 4" :key="_id" />
     </SectionCards>
   </section>
 </template>
