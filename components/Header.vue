@@ -1,36 +1,42 @@
 <template>
   <header class="header">
-    <div class="header__name">
-      <h3 class="header__text">
+    <Container id="container-header">
+      <h3 class="header__name">
         Проект Благотворительного Фонда Константина Хабенского
       </h3>
-    </div>
-    <nav class="header__nav">
-      <a href="/index" class="nav__link">Главная</a>
-      <a href="/stories/index" class="nav__link">Истории</a>
-      <a href="components/Popup" class="nav__link">Рассказать историю</a>
-    </nav>
+      <nav class="header__nav">
+        <a href="/index" class="nav__link">Главная</a>
+        <a href="/stories/index" class="nav__link">Истории</a>
+        <a href="components/Popup" class="nav__link">Рассказать историю</a>
+      </nav>
+    </Container>
   </header>
 </template>
 
 <script>
-export default {};
+import Container from '@/components/Container';
+export default {
+  components: {
+    Container,
+  },
+};
 </script>
 
 <style scoped>
 .header {
-  margin: 0 auto;
-  max-width: 1440px;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#container-header {
+  display: flex;
 }
 
 .header__name {
   max-width: 340px;
-  margin: 18px auto 18px 62px;
-}
-
-.header__text {
+  margin: 18px auto 18px 0;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -48,7 +54,7 @@ export default {};
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  margin-left: 34.5px;
+  margin-left: 34px;
   text-decoration: none;
   color: #000000;
 }
@@ -63,7 +69,7 @@ export default {};
 
 .nav__link_isActive {
   text-decoration: underline;
-  color: #000000;
+  color: #000;
 }
 
 @media screen and (max-width: 1024px) {

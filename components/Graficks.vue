@@ -90,7 +90,7 @@ export default {};
   justify-content: space-between;
   width: 300px;
   height: 300px;
-  border: 1px solid#EFEFEF;
+  border: 1px solid #efefef;
 }
 
 .graf__block-title {

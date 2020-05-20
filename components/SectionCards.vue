@@ -10,7 +10,7 @@ export default {};
 .section-cards {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  max-width: 100%;
   flex-wrap: wrap;
 }
 </style>

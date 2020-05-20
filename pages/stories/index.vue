@@ -28,7 +28,7 @@
         </div>
       </form>
       <SectionCards id="story-wrapped">
-        <StoriesCard v-for="index in 16" />
+        <StoriesCard v-for="index in 16" :key="index" />
       </SectionCards>
       <div class="story__next-buttons">
         <ButtonNumberPage v-text="1"></ButtonNumberPage>
