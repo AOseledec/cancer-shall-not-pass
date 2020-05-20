@@ -7,10 +7,7 @@
             Спасибо всем, кто помог состояться этому проекту
           </h2>
         </div>
-        <nav class="footer__nav">
-          <a href="" class="nav__link">Главная</a>
-          <a href="" class="nav__link">Истории</a>
-        </nav>
+        <Menu class="footer__nav"></Menu>
         <div class="footer__social">
           <p class="footer__social-links">
             Мы в
@@ -52,10 +49,13 @@
 <script>
 import ShareButton from '@/components/UI/ShareButton';
 import Container from '@/components/Container';
+import Menu from '@/components/UI/Menu';
+
 export default {
   components: {
     ShareButton,
     Container,
+    Menu,
   },
 };
 </script>
@@ -92,7 +92,6 @@ export default {
 
 .footer__nav {
   margin: 60px 379px auto 113px;
-  display: flex;
 }
 
 .nav__link {
