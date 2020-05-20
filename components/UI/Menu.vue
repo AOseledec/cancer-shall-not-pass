@@ -7,8 +7,8 @@
       <li class="nav__item">
         <nuxt-link to="/stories" class="nav__link">Истории</nuxt-link>
       </li>
-      <slot />
     </ul>
+    <slot />
   </nav>
 </template>
 
@@ -20,13 +20,18 @@ export default {
 
 <style scoped>
 .nav {
+  display: flex;
 }
 
 .nav__list {
-  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .nav__item {
+  margin-right: 34px;
 }
 
 .nav {

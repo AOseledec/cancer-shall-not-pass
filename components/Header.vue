@@ -1,20 +1,12 @@
 <template>
-  <header class="header">
-    <Container>
-      <h3 class="header__name">
-        Проект Благотворительного Фонда Константина Хабенского
-      </h3>
-      <nav class="header__nav">
-        <a href="/" class="nav__link">Главная</a>
-        <a href="/stories/" class="nav__link">Истории</a>
-        <a href="components/" class="nav__link">Рассказать историю</a>
-      </nav>
-
-      <Menu>
-        <Button :theme="'puprple'">Рассказать историю</Button>
-      </Menu>
-    </Container>
-  </header>
+  <Container class="header">
+    <h3 class="header__name">
+      Проект Благотворительного Фонда Константина Хабенского
+    </h3>
+    <Menu>
+      <Button @btnClick="popupShow" :theme="'talk'">Рассказать историю</Button>
+    </Menu>
+  </Container>
 </template>
 
 <script>
@@ -27,6 +19,11 @@ export default {
     Container,
     Menu,
     Button,
+  },
+  methods: {
+    popupShow() {
+      this.$store.commit('popup/togglePopup');
+    },
   },
 };
 </script>

@@ -11,26 +11,27 @@
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import Popup from '@/components/Popup';
+import store from '@/store';
 
 export default {
-  computed: {
-    popupShow() {
-      return this.$store.getters['popup.getPopupShow'];
-    },
-  },
   components: {
     Header,
     Footer,
     Popup,
   },
-  methods: {
-    submitQuestionForm() {
-      console.log(
-        `This name: ${this.name}, this email: ${this.email}, this message: ${this.message}`
-      );
-      this.$store.commit('popup/togglePopup');
+  computed: {
+    popupShow() {
+      return this.$store.getters['popup/getPopupShow'];
     },
   },
+  // methods: {
+  //   submitQuestionForm() {
+  //     console.log(
+  //       `This name: ${this.name}, this email: ${this.email}, this message: ${this.message}`
+  //     );
+  //     this.$store.commit('popup/togglePopup');
+  //   },
+  // },
 };
 </script>
 

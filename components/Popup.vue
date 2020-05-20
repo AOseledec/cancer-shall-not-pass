@@ -2,8 +2,8 @@
   <div class="popup" @click.self="togglePopup">
     <div class="popup__content">
       <img
-        @click="togglePopup"
         class="popup__cross"
+        @click="togglePopup"
         src="/cross.svg"
         alt="Закрыть"
       />
@@ -43,5 +43,6 @@ export default {
   position: absolute;
   top: 36px;
   right: 36px;
+  cursor: pointer;
 }
 </style>
