@@ -1,23 +1,32 @@
 <template>
   <header class="header">
-    <Container id="container-header">
+    <Container>
       <h3 class="header__name">
         Проект Благотворительного Фонда Константина Хабенского
       </h3>
       <nav class="header__nav">
-        <a href="/index" class="nav__link">Главная</a>
-        <a href="/stories/index" class="nav__link">Истории</a>
-        <a href="components/Popup" class="nav__link">Рассказать историю</a>
+        <a href="/" class="nav__link">Главная</a>
+        <a href="/stories/" class="nav__link">Истории</a>
+        <a href="components/" class="nav__link">Рассказать историю</a>
       </nav>
+
+      <Menu>
+        <Button :theme="'puprple'">Рассказать историю</Button>
+      </Menu>
     </Container>
   </header>
 </template>
 
 <script>
 import Container from '@/components/Container';
+import Menu from '@/components/UI/Menu';
+import Button from '@/components/UI/Button';
+
 export default {
   components: {
     Container,
+    Menu,
+    Button,
   },
 };
 </script>
@@ -27,11 +36,7 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 100%;
-}
-
-#container-header {
-  display: flex;
+  width: 100%;
 }
 
 .header__name {

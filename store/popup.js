@@ -1,15 +1,17 @@
-export const state = () => ({
+const state = () => ({
   popupShow: false,
 });
 
-export const mutations = {
+const mutations = {
   togglePopup(state) {
     return (state.popupShow = !state.popupShow);
   },
 };
 
-export const getters = {
+const getters = {
   getPopupShow(state) {
     return state.popupShow;
   },
 };
+
+export { state, mutations, getters };

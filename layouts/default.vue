@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Popup v-if="popupShow">asdasd </Popup>
     <Header />
     <nuxt />
     <Footer />
@@ -9,11 +10,26 @@
 <script>
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
+import Popup from '@/components/Popup';
 
 export default {
+  computed: {
+    popupShow() {
+      return this.$store.getters['popup.getPopupShow'];
+    },
+  },
   components: {
     Header,
     Footer,
+    Popup,
+  },
+  methods: {
+    submitQuestionForm() {
+      console.log(
+        `This name: ${this.name}, this email: ${this.email}, this message: ${this.message}`
+      );
+      this.$store.commit('popup/togglePopup');
+    },
   },
 };
 </script>
