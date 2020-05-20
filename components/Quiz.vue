@@ -10,15 +10,15 @@
         class="popup__input"
         placeholder="Напишите тут"
       />
-      <ButtonBack />
-      <ButtonNext />
+      <Button :theme="'back'">Назад</Button>
+      <Button :theme="'purple'">Далее</Button>
     </form>
   </div>
 </template>
 
 <script>
-import ButtonNext from '@/components/UI/ButtonNext';
-import ButtonBack from '@/components/UI/ButtonBack';
+import Button from '@/components/UI/Button';
+
 export default {
   props: {
     title: {
@@ -33,8 +33,7 @@ export default {
     },
   },
   components: {
-    ButtonNext,
-    ButtonBack,
+    Button,
   },
 };
 </script>

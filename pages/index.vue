@@ -33,6 +33,18 @@
     </Container>
 
     <Container>
+      <Button :theme="'more'">Больше статей</Button>
+      <Button :theme="'back'">Назад</Button>
+      <Button :theme="'purple'">Далее</Button>
+      <Button :theme="'purple'">Заполнить форму</Button>
+      <Paggination />
+      <ShareButton></ShareButton>
+      <CancerCure></CancerCure>
+      <Variation></Variation>
+      <VideoButton></VideoButton>
+    </Container>
+
+    <Container>
       <StorieIndex>
         <Split>И В ОТЛИЧИЕ ОТ РАКА,</Split>
       </StorieIndex>
@@ -132,6 +144,14 @@ import Container from '@/components/Container';
 import Split from '@/components/Split';
 import StorieIndex from '@/components/StorieIndex';
 
+import Button from '@/components/ui/Button';
+import Paggination from '@/components/ui/Paggination';
+
+import CancerCure from '@/components/ui/CancerCure';
+import ShareButton from '@/components/ui/ShareButton';
+import Variation from '@/components/ui/Variation';
+import VideoButton from '@/components/ui/VideoButton';
+
 export default {
   components: {
     Graficks,
@@ -141,6 +161,14 @@ export default {
     Container,
     Split,
     StorieIndex,
+    //
+    Button,
+    Paggination,
+    //
+    CancerCure,
+    ShareButton,
+    Variation,
+    VideoButton,
   },
 };
 </script>
