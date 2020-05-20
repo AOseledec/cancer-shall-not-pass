@@ -18,7 +18,6 @@ export default {
   padding-left: 60px;
   padding-right: 60px;
   margin: 0 auto;
-  width: 100%;
 }
 
 @media screen and (max-width: 1280px) {
