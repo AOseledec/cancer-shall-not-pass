@@ -2,29 +2,22 @@
   <div>
     <slot></slot>
     <SectionCards>
-      <StoriesCard></StoriesCard>
-      <StoriesCard></StoriesCard>
-      <StoriesCard></StoriesCard>
-      <StoriesCard></StoriesCard>
-      <StoriesCard></StoriesCard>
-      <StoriesCard></StoriesCard>
-      <StoriesCard></StoriesCard>
-      <StoriesCard></StoriesCard>
+      <StoriesCard v-for="n in 8" :key="n"></StoriesCard>
     </SectionCards>
-    <ButtonMoreStory />
+    <Button :theme="'more'">Больше статей</Button>
   </div>
 </template>
 
 <script>
 import StoriesCard from '@/components/StoriesCard';
-import ButtonMoreStory from '@/components/ButtonMoreStory';
+import Button from '@/components/UI/Button';
 import SectionCards from '@/components/SectionCards';
 import Split from '@/components/Split';
 
 export default {
   components: {
     StoriesCard,
-    ButtonMoreStory,
+    Button,
     SectionCards,
     Split,
   },

@@ -31,18 +31,19 @@
         </p>
       </div>
     </Container>
+
     <Container>
-      <ButtonBack></ButtonBack>
-      <ButtonNext></ButtonNext>
-      <CancerCure></CancerCure>
-      <MoreArticles></MoreArticles>
+      <Button :theme="'more'">Больше статей</Button>
+      <Button :theme="'back'">Назад</Button>
+      <Button :theme="'purple'">Далее</Button>
+      <Button :theme="'purple'">Заполнить форму</Button>
+      <Paggination />
       <ShareButton></ShareButton>
-      <StoryButton></StoryButton>
+      <CancerCure></CancerCure>
       <Variation></Variation>
       <VideoButton></VideoButton>
-      <fillForm></fillForm>
-      <Banner>asd</Banner>
     </Container>
+
     <Container>
       <StorieIndex>
         <Split>И В ОТЛИЧИЕ ОТ РАКА,</Split>
@@ -143,16 +144,13 @@ import Container from '@/components/Container';
 import Split from '@/components/Split';
 import StorieIndex from '@/components/StorieIndex';
 
-import Banner__arrow from '@/components/ui/Banner__arrow';
-import ButtonBack from '@/components/ui/ButtonBack';
-import ButtonNext from '@/components/ui/ButtonNext';
+import Button from '@/components/ui/Button';
+import Paggination from '@/components/ui/Paggination';
+
 import CancerCure from '@/components/ui/CancerCure';
-import MoreArticles from '@/components/ui/MoreArticles';
 import ShareButton from '@/components/ui/ShareButton';
-import StoryButton from '@/components/ui/StoryButton';
 import Variation from '@/components/ui/Variation';
 import VideoButton from '@/components/ui/VideoButton';
-import fillForm from '@/components/ui/fillForm';
 
 export default {
   components: {
@@ -164,16 +162,13 @@ export default {
     Split,
     StorieIndex,
     //
-    ButtonBack,
-    ButtonNext,
+    Button,
+    Paggination,
+    //
     CancerCure,
-    MoreArticles,
     ShareButton,
-    StoryButton,
     Variation,
     VideoButton,
-    fillForm,
-    Banner: Banner__arrow,
   },
 };
 </script>

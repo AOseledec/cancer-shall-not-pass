@@ -22,10 +22,20 @@ export default {
   text-align: center;
   border: none;
   background: white;
+  cursor: pointer;
+  outline: none;
 }
-
+.button_theme-list {
+  width: 58px;
+  height: 58px;
+  font-size: 18px;
+  background-color: #f4f4f4;
+  margin: 5px;
+}
+.button_theme-list:hover {
+  background-color: #eee;
+}
 .button_theme-back {
-  float: left;
   color: #c0c0c0;
 }
 .button_theme-purple {
@@ -41,8 +51,11 @@ export default {
 .button_theme-more {
   width: 100%;
   height: 82px;
-  background: #f8f8f8;
+  background: #fbfbfb;
   color: #000;
+}
+.button_theme-more:hover {
+  background-color: #f8f8f8;
 }
 .button_theme-talk {
   font-size: 18px;
