@@ -17,12 +17,14 @@
             <a
               class="footer__social-links"
               href="https://www.instagram.com/yndx.praktikum/"
+              target="_blank"
               >Инстаграме</a
             >
             и
             <a
               class="footer__social-links"
               href="https://www.youtube.com/channel/UCTUyoZMfksbNIHfWJjwr5aQ"
+              target="_blank"
               >Youtube</a
             >
           </p>
@@ -37,6 +39,7 @@
             <a
               href="https://praktikum.yandex.ru/"
               class="footer__copyright-text"
+              target="_blank"
               >Яндекс Практикум</a
             >
           </p>
